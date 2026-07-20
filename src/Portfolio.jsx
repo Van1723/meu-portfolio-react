@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import './Portfolio.css';
 
 export default function Portfolio() {
@@ -53,6 +54,7 @@ export default function Portfolio() {
 
   return (
     <div className={`portfolio-container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+      <Analytics />
       
       {/* Header / Navegação */}
       <header className="portfolio-header">
